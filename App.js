@@ -19,10 +19,12 @@ export default function App() {
             uri: 'https://www.html.am/templates/downloads/bryantsmith/hdmonochrome/mainImage.jpg'
             }}
             /> */}
+         
             <View style={styles.img}>
-              <Text>HD Monochrome</Text>
-              <Text>An XHTML 1.0 Strict Template by Bryant Smith</Text>
+              <Text style={styles.bannerHead}>HD Monochrome</Text>
+              <Text style={styles.bannerSubHead}>An XHTML 1.0 Strict Template by Bryant Smith</Text>
             </View>
+            
         </View>
         <View style={styles.content}>
             <Text style={styles.head}>High Definition Monochrome</Text>
@@ -60,8 +62,7 @@ const styles = StyleSheet.create({
     
   },
   page: {
-    padding: 10,
-    backgroundColor: '#590'
+    backgroundColor: '#ccc'
   },
 
   nav: {
@@ -81,14 +82,25 @@ const styles = StyleSheet.create({
     borderRightStyle: 'none',
     marginBottom: 7
   },
+
+
   img:{
     width: '80%',
     flexDirection: 'column',
+    padding: 20,
+    backgroundColor: '#fff',
     borderWidth: 10,
     marginBottom: 10,
     margin: 'auto'
   },
-
+  bannerHead:{
+    fontFamily: 'Georgia',
+    fontSize: 25,
+  },
+  bannerSubHead:{
+    fontFamily: 'Georgia',
+    fontSize: 15,
+  },
   content: {
     width: '80%',
     borderWidth: 10,
@@ -96,14 +108,12 @@ const styles = StyleSheet.create({
     margin: 'auto',
     backgroundColor: '#fff'
   },
-
   head: {
     fontFamily: 'Georgia',
     fontWeight: 'bold',
     fontSize: 25,
     marginVertical: 5 
   },
-
   bodyText: {
     fontFamily: 'Georgia',
     fontSize: 14,
@@ -111,7 +121,6 @@ const styles = StyleSheet.create({
     marginBottom: 20, 
     lineHeight: 22,
   },
-
   quote:{
     width: '75%',
     fontFamily: 'Helvetica',
